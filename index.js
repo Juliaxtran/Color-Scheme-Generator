@@ -5,9 +5,9 @@ const colorTwo = document.querySelector(".color-two");
 
 const getColor = () => {
   // this works but
-  // fetch(`${url}/scheme?hex=00000&mode=monochrome&count=5`)
-  // this doesn't work don't know why :( 
-  fetch(`${url}/scheme?hex=${color}&mode=${mode}&count=5`)
+  fetch(`${url}/scheme?hex=00000&mode=monochrome&count=5`)
+  // this doesn't work don't know why :(
+  // fetch(`${url}/scheme?hex=${color}&mode=${mode}&count=5`)
     .then(res => res.json())
     .then(data => {
       console.log(data.colors);
