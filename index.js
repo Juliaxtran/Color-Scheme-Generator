@@ -56,14 +56,14 @@ colors.forEach((color) => {
     let style = window.getComputedStyle(color);
     let copyColor = style.getPropertyValue("background-color");
     navigator.clipboard.writeText(copyColor);
-    color.style.color = "white";
-    color.innerText = "Copied!";
     const newColor = copyColor.substring(4, copyColor.length - 1)
       .replace(/ /g, '')
       .split(',');
     const hexNumber = rgbToHex(newColor[0], newColor[1], newColor[2]);
     const newHexNumber = hexNumber.toUpperCase();
-
+    color.style.color = "white";
+    color.innerText = "Copied!";
+    navigator.clipboard.writeText(newHexNumber);
 
     setTimeout(() => {
       color.innerText = newHexNumber;
