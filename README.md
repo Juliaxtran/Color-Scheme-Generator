@@ -14,6 +14,7 @@ To use the color scheme generator, simply visit the website and choose a startin
 If you would like to contribute to the development of this tool, please fork the repository and submit a pull request with your changes. All contributions are welcome!
 
 ![](https://github.com/Juliaxtran/Color-Scheme-Generator/blob/main/chrome-capture-2022-11-13.gif?raw=true)
-
+Live site 
+[Color Scheme Generator](https://storied-hamster-e3e26a.netlify.app/)
 
 
